@@ -1,6 +1,6 @@
 import React , {useEffect} from 'react';
 import { LEVELS } from '../../models/levels';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Task } from '../../models/task.class';
 import '../../styles/task.scss'
 
@@ -76,9 +76,9 @@ const TaskComponent = ({task, complete, remove}) => {
 };
 
 
-// TaskComponent.propTypes = {
-//     task : PropTypes.instanceOf(Task)
-// };
+TaskComponent.propTypes = {
+    task : PropTypes.instanceOf(Task)
+};
 
 
 export default TaskComponent;

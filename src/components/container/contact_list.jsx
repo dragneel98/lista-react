@@ -8,9 +8,13 @@ const ContactList = () => {
     const defaultContact = new Contact("gon",false)
     const [contacts, setContacts] = useState([defaultContact]);
 
-    // function addContact() {
-        
-    // }
+     function addContact(contact) {
+        console.log("add");
+        const index= contacts.indexOf(contact)
+        const tempContact= [...contacts]
+        tempContact.push(contact)
+        setContacts(tempContact)
+    }
     // function contactRemove() {
         
     // }
