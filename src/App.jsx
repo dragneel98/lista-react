@@ -5,7 +5,8 @@ import GretingStyle from './components/pure/gretingStyle';
 import TaskComponent from './components/pure/task';
 import TaskListComponent from './components/container/task_list';
 import Father from './components/container/father';
-import ContactList from './components/container/contact_list';
+import OptionalRender from './components/pure/optionalRender';
+import TaskFormik from './components/pure/forms/taskFormik';
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -33,9 +34,11 @@ function App() {
       </p>
       <GretingStyle name="gon"></GretingStyle> */}
       {/* <Father></Father> */}
-      <ContactList></ContactList>
-      {/* <TaskListComponent></TaskListComponent> */}
-
+      {/* <ContactList></ContactList> */}
+      {/* <OptionalRender></OptionalRender> */}
+      <TaskListComponent></TaskListComponent>
+      {/* <TaskFormik></TaskFormik> */}
+      
       
     </div>
   )

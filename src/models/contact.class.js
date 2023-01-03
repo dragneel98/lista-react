@@ -1,3 +1,4 @@
+import { STATE } from "./state";
 
 export class Contact {
     name = "" ;

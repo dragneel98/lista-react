@@ -6,6 +6,7 @@ import '../../styles/task.scss'
 
 
 const TaskComponent = ({task, complete, remove}) => {
+    
     useEffect(() => {
         console.log("created task");
         return () => {
@@ -55,8 +56,17 @@ const TaskComponent = ({task, complete, remove}) => {
             return (<i onClick={()=> complete(task)} className='bi-toggle-off task-action' style={{color:'grey'}}></i>)
         }
     }
+
+    const taskCompletedStyle = {
+        color: "gray",
+        textDecoration: "line-through"
+    }
+    const taskPendingStyle = {
+        fontWeight: "bold",
+        color: "tomato"
+    }
     return (
-        <tr className='fw-normal'>
+        <tr className='fw-normal' style={task.completed ? taskCompletedStyle : taskPendingStyle}>
             <th className='ms-2'>
                 <span>{task.name}</span>
             </th>
