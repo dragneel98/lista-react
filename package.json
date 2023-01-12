@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://dragneel98.github.io/lista-react/build",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
